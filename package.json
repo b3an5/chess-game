@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/b3an5/chess-game",
   "name": "chess-game",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +20,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +47,7 @@
   },
   "devDependencies": {
     "@types/chess.js": "^0.10.1",
+    "gh-pages": "^3.1.0",
     "prettier": "2.2.1"
   }
 }
